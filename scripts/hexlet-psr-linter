@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$data = '<?php echo "hello world";';
+$linter = new HexletPsrLinter\MyLinter($data);
+
+print_r($linter->validate());

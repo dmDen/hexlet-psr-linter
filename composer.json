@@ -1,0 +1,21 @@
+{
+  "name": "dmDen/hexlet-psr-linter",
+  "bin": ["scripts/hexlet-psr-linter"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "dmDen"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HexletPsrLinter\\": "src/"
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "squizlabs/php_codesniffer": "*",
+    "codeclimate/php-test-reporter": "dev-master"
+  }
+}
